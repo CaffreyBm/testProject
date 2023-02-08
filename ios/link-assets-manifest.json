@@ -1,0 +1,53 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/NotoSans-Bold.ttf",
+      "sha1": "00a4dc42180951b52eb9797cb4d6f64527432220"
+    },
+    {
+      "path": "src/assets/fonts/NotoSans-Regular.ttf",
+      "sha1": "2b2500b3269369d0d1a29768aaa869405d4f1575"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansThai-Bold.ttf",
+      "sha1": "cb17e79275330ebcc552997e422ac255f00aecb3"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansThai-Light.ttf",
+      "sha1": "060833a1bb78de985dc4a9bfdcf8a6b92b17287c"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansThai-Medium.ttf",
+      "sha1": "30c1db43ed78e9dc50c5f5b4a47eb36c9975d0d2"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansThai-Regular.ttf",
+      "sha1": "3460f3a7d82f6e09c61b601d3446044f4cac28ef"
+    },
+    {
+      "path": "src/assets/fonts/NotoSansThai-SemiBold.ttf",
+      "sha1": "f3085d81e5c925bf0f56efb63b83abd19096bcc1"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Bold.ttf",
+      "sha1": "b9b65c039a1f10a5cb5e0726c6e7e18e98a8e517"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Light.ttf",
+      "sha1": "246982f0e815573f4915b4dd6f9861d56f147da2"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Medium.ttf",
+      "sha1": "af7058373acbcf383dd114b8f9bbfb9faafd79eb"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-Regular.ttf",
+      "sha1": "01d319c533f62ea29f03b5df8adfd4d93d2d2a38"
+    },
+    {
+      "path": "src/assets/fonts/Poppins-SemiBold.ttf",
+      "sha1": "20b39c8b480c946b084d6aa09f12bf10b2ec5aa6"
+    }
+  ]
+}
