@@ -283,7 +283,7 @@ class Test extends Component {
                       </Text>
                       {this.state.coinSearch.length > 0 &&
                         this.state.coinSearch.map((item, index) => {
-                          console.log(item.change, 'item.change');
+                          // console.log(item.change, 'item.change');
                           let valueChange =
                             item.change && item.change.length == 5
                               ? item.change.substring(1)
@@ -772,76 +772,7 @@ class Test extends Component {
               </View>
             </ScrollView>
           )}
-          {/* <View style={styles.contentGroup}>
-                <Text style={styles.contentItemTitleLg}>
-                  Buy, sell and hold crypto
-                </Text>
-                <TouchableOpacity
-                  style={[
-                    styles.paddingB5,
-                    {
-                      flex: 1,
-                      flexDirection: 'row',
-                    },
-                  ]}>
-                  <View
-                    style={[
-                      styles.flex1,
-                      styles.contentCardThree,
-                      {flexDirection: 'row'},
-                    ]}>
-                    <View style={{paddingHorizontal: 5}}>
-                      <Image
-                        style={[
-                          styles.iconRank,
-                          {flex: 1, tintColor: '#c6c6c6', alignSelf: 'center'},
-                        ]}
-                        source={require('../assets/images/icon/cross.png')}
-                        resizeMode="contain"
-                      />
-                    </View>
-                    <View
-                      style={{
-                        paddingHorizontal: 5,
-                        justifyContent: 'center',
-                        flex: 1,
-                      }}>
-                      <Text style={styles.contentItemTitleLg} numberOfLines={1}>
-                        BTC
-                      </Text>
-                      <Text
-                        style={[styles.contentItemTitle, {color: '#c6c6c6'}]}>
-                        USD
-                      </Text>
-                    </View>
-                    <View style={{paddingHorizontal: 5}}>
-                      <View
-                        style={[
-                          styles.flex1,
-                          {alignItems: 'flex-end', justifyContent: 'center'},
-                        ]}>
-                        <Text style={[styles.contentItemTextSm]}>
-                          5454541.00007
-                        </Text>
-                      </View>
-                      <View
-                        style={[
-                          styles.flex1,
-                          {justifyContent: 'flex-end', flexDirection: 'row'},
-                        ]}>
-                        <Image
-                          style={[styles.iconArrowRank]}
-                          source={require('../assets/images/icon/arrow_down_red.png')}
-                          resizeMode="contain"
-                        />
-                        <Text style={[styles.contentItemTextSm]}>1.07</Text>
-                      </View>
-                    </View>
-                  </View>
-                </TouchableOpacity>
-              </View> */}
         </View>
-
         <Modal
           animationType="slide"
           isVisible={this.state.modalOpenPopUp}
