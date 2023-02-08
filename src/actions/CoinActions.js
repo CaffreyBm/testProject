@@ -9,22 +9,23 @@ import {
 } from './type';
 import moment from 'moment';
 import {BaseUrl} from '../utils/config';
+const accessToken = 'coinrankingb4ac77ef5207f7e739f74a85c12f195b846dd741766c513f'
 
 export const getCryptoCoin = request => {
-  console.log('request', request);
+  // console.log('request', request);
   return async dispatch => {
     axios
       .get(
         BaseUrl + 'coins?limit=' + request.limit + '&offset=' + request.offset,
         {
           headers: {
-            'x-access-token': request,
+            'x-access-token': accessToken,
           },
         },
       )
       .then(function (response) {
         if (response.status === 200) {
-          console.log(response.data, 'getCryptoCoin');
+          // console.log(response.data, 'getCryptoCoin');
           dispatch({
             type: GET_CRYPTO_COIN_SUCCESS,
             payload: {
@@ -40,7 +41,7 @@ export const getCryptoCoin = request => {
         }
       })
       .catch(function (error) {
-        console.log(error, 'test error');
+        // console.log(error, 'test error');
         dispatch({
           type: GET_CRYPTO_COIN_ERROR,
           payload: {data: error, time: new Date().toLocaleString()},
@@ -50,17 +51,17 @@ export const getCryptoCoin = request => {
 };
 
 export const getCoinDetail = request => {
-  console.log('request', request);
+  // console.log('request', request);
   return async dispatch => {
     axios
       .get(BaseUrl + 'coin/' + request.uuid, {
         headers: {
-          'x-access-token': request,
+          'x-access-token': accessToken,
         },
       })
       .then(function (response) {
         if (response.status === 200) {
-          console.log(response.data, 'getCoinDetail');
+          // console.log(response.data, 'getCoinDetail');
           dispatch({
             type: GET_COIN_DETAIL_SUCCESS,
             payload: {
@@ -76,7 +77,7 @@ export const getCoinDetail = request => {
         }
       })
       .catch(function (error) {
-        console.log(error, 'test error');
+        // console.log(error, 'test error');
         dispatch({
           type: GET_COIN_DETAIL_ERROR,
           payload: {data: error, time: new Date().toLocaleString()},
@@ -86,17 +87,17 @@ export const getCoinDetail = request => {
 };
 
 export const getCoinSearch = request => {
-  console.log('request', BaseUrl + 'coins/?search=' + request.search +'&limit='+ request.limit +'&offset='+ request.offset);
+  // console.log('request', BaseUrl + 'coins/?search=' + request.search +'&limit='+ request.limit +'&offset='+ request.offset);
   return async dispatch => {
     axios
       .get(BaseUrl + 'coins/?search=' + request.search +'&limit='+ request.limit +'&offset='+ request.offset, {
         headers: {
-          'x-access-token': request,
+          'x-access-token': accessToken,
         },
       })
       .then(function (response) {
         if (response.status === 200) {
-          console.log(response.data, 'getCoinSearch');
+          // console.log(response.data, 'getCoinSearch');
           dispatch({
             type: GET_COIN_SEARCH_SUCCESS,
             payload: {
@@ -112,7 +113,7 @@ export const getCoinSearch = request => {
         }
       })
       .catch(function (error) {
-        console.log(error, 'test error');
+        // console.log(error, 'test error');
         dispatch({
           type: GET_COIN_SEARCH_ERROR,
           payload: {data: error, time: new Date().toLocaleString()},

@@ -102,7 +102,7 @@ class Test extends Component {
           () => this.setState({waitingAddSearch: false, isLoad: false}),
         );
       } else {
-        console.log(this.props.coinSearch, 'this.props.coinSearch');
+        // console.log(this.props.coinSearch, 'this.props.coinSearch');
         this.setState({coinSearch: [], waitingAddSearch: false});
       }
     }
